@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class BaseController {
 
+	//TODO: update Maven dependencies
+	
 	@RequestMapping(value="/welcome", method= RequestMethod.GET)	
 	public String welcome(ModelMap model) {
 		model.addAttribute("message", "Maven Dynamic Web Project + Spring 3 MVC - welcome()");
